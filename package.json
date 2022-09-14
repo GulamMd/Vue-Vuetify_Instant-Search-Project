@@ -2,10 +2,12 @@
   "name": "instant-search-project",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "devStart": "nodemon server.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
@@ -13,7 +15,12 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/vue-fontawesome": "^2.0.8",
+    "axios": "^0.27.2",
     "core-js": "^3.8.3",
+    "express": "^4.18.1",
+    "fs": "0.0.1-security",
+    "node": "^18.9.0",
+    "uuid": "^9.0.0",
     "vue": "^2.6.14",
     "vuetify": "^2.6.0"
   },
@@ -25,6 +32,7 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "nodemon": "^2.0.19",
     "sass": "~1.32.0",
     "sass-loader": "^10.0.0",
     "vue-cli-plugin-vuetify": "~2.5.5",
