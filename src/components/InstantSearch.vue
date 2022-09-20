@@ -90,7 +90,7 @@ export default {
       this.tempArr = this.articles;
     },
     async getApi() {
-      let apiData = await axios.get("http://localhost:5000/users");
+      let apiData = await axios.get("http://localhost:3000/articles");
       this.articles = apiData.data;
     },
   },
